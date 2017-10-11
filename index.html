@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>inSound Productions</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -10,9 +14,11 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div align="center" class="wrapper">
 	<!-- NAVBAR -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -24,18 +30,18 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">STUDIO 32</a>
+		      <a class="navbar-brand" href="#">Cloud 9 </a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Link</a></li>
+		        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">contact</a></li>
 		        
 		      </ul>
 		        <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
+		        <li><a href="#">Login</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -55,19 +61,68 @@
 	<!--MAIN SECTION -->
 	<main>
 		<div class="row">
-		<aside class="col-xs-6 well float-left">
-			<h1> People </h1>
+		<aside class="col-xs-6  float-left">
+			<h1>People</h1>
 			<ul>
-				<ol>groom</ol>
-				<ol>bride</ol>
-				<ol>best man</ol>
-				<ol>groomsmen</ol>
-				<ol>maid of honor </ol>
-				<ol>bridesmaids</ol>
+				<ol>
+					<input
+						 type="text" 
+						 name="groom" 
+						 placeholder="groom"
+						 onfocus="this.placeholder =''"
+						 onblur="this.placeholder ='groom'">
+					</input>
+				</ol>
+				<ol>
+					<input
+						 type="text"
+						 name="bride" 
+						 placeholder="bride"
+						 onfocus="this.placeholder =''"
+						 onblur="this.placeholder ='bride'">
+					</input>
+				</ol>
+				<ol>
+					<input 
+						type="text" 
+						name="bestman" 
+						placeholder="best man"
+						onfocus="this.placeholder =''"
+	   					onblur="this.placeholder ='bride'">
+					</input>
+				</ol>
+				<ol>
+					<input 
+						type="text" 
+						name="maidofhonor" 
+						placeholder="maid of honor"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='maid of honor'">
+					</input>
+				</ol>
+				<ol>
+					<input 
+						type="text" 
+						name="groomsmen" 
+						placeholder="groomsmen"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='groomsmen'">
+					</input>
+				</ol>
+				<ol>
+					<input 
+						type="text" 
+						name="bridesmaids" 
+						placeholder="bridesmaids"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='bridesmaids'">
+					</input>
+				</ol>
 			</ul>
 		</aside>
-		<aside class="col-xs-6 well float-right">
-			<h1> Event Details </h1>
+
+		<aside class="col-xs-6">
+			<h1>Event Details </h1>
 			<ul>
 				<ol>Cake Cutting</ol>
 				<ol>Bouquet toss</ol>
@@ -78,20 +133,32 @@
 			</ul>
 		</aside>
 		</div>
-
-				<div class="row">
-		<aside class="col-xs-6 well float-left">
-			<h1> Requests </h1>
-			<textarea name="requests" rows="10" cols="100"> enter songs here</textarea>
-
+<!--REQUESTS SECTION -->
+		<div class="row">
+		<aside class="col-xs-6">
+			<h1>Requests </h1>
+				<ul>
+					<ol><input type="text" name="Requests" placeholder="enter song name"></input></ol>
+				</ul>
 		</aside>
-		<aside class="col-xs-6 well float-right">
+
+<!-- DO NOT PLAY LIST SECTION-->
+		<section class="col-xs-6 ">
 			<h1> Do Not Play </h1>
-						<textarea name="requests" rows="10" cols="100"> enter songs here</textarea>
-		</aside>
+				<ul>
+					<ol>
+						<input 
+							type="text"
+							name="donotplay" 
+							placeholder="enter song name">		
+						</input>
+					</ol>
+				</ul>
+		</section>
 		</div>
 	</main>
 
 </div>
+<script type="text/javascript" src="assets/js/logic.js"></script>
 </body>
 </html>
