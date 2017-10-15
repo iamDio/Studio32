@@ -63,7 +63,7 @@
 	<!--MAIN SECTION -->
 	<main>
 		<div class="row">
-		<aside>
+		<section>
 			<h1>People</h1>
 			<ul>
 				<ol>
@@ -121,9 +121,9 @@
 					</input>
 				</ol>
 			</ul>
-		</aside>
+		</section>
 
-		<aside>
+		<section>
 			<h1>Event Details </h1>
 			<ul>
 				<ol>Cake Cutting</ol>
@@ -133,31 +133,38 @@
 				<ol>dd </ol>
 				<ol>dd </ol>
 			</ul>
-		</aside>
+		</section>
 		</div>
+
 <!--REQUESTS SECTION -->
 		<div class="row">
-		<aside>
+		<section>
 			<h1>Requests </h1>
 				<ul id="request">
 					<ol>
-						<input class="requestItem" type="text" name="Requests" placeholder="enter song name"></input>
+						<input
+							type="text" 
+							name="Requests" 
+							placeholder="enter song name">
+						 </input>
 					</ol>
 				</ul>
-		</aside>
+					<button class="requestItem" type="submit">Add a new Song</button>
+		</section>
 
 <!-- DO NOT PLAY LIST SECTION-->
 		<section>
 			<h1> Do Not Play </h1>
-				<ul>
+				<ul id="doNotPlay">
 					<ol>
 						<input 
 							type="text"
-							name="donotplay" 
+							name="doNotPlay" 
 							placeholder="enter song name">
 						</input>
 					</ol>
 				</ul>
+				<button class="createDnp" type="submit">Add a new Song</button>
 		</section>
 		</div>
 	</main>
