@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inSound Productions</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+<body>
+	<div align="center" class="wrapper">
+	<!-- NAVBAR -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Cloud 9 </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">contact</a></li>
+		        
+		      </ul>
+		        <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Login</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	<!-- NAVBAR -->
+
+	<!--MAIN SECTION -->
+	<main>
+		<div class="row">
+		<section>
+			<h1>The stars and Crew</h1>
+			<ul>
+				<ol>
+					<label>Man of the Hour: </label>
+					<input
+						 type="text" 
+						 name="groom" 
+						 placeholder="groom"
+						 onfocus="this.placeholder =''"
+						 onblur="this.placeholder ='groom'">
+					</input>
+				</ol>
+				<ol>
+					<label>Belle of the Ball: </label>
+					<input
+						 type="text"
+						 name="bride" 
+						 placeholder="bride"
+						 onfocus="this.placeholder =''"
+						 onblur="this.placeholder ='bride'">
+					</input>
+				</ol>
+				<ol>
+					<label>Right hand man: </label>
+					<input 
+						type="text" 
+						name="bestman" 
+						placeholder="best man"
+						onfocus="this.placeholder =''"
+	   					onblur="this.placeholder ='bride'">
+					</input>
+				</ol>
+				<ol>
+					<label>Sista from another Mista: </label>
+					<input 
+						type="text" 
+						name="maidofhonor" 
+						placeholder="maid of honor"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='maid of honor'">
+					</input>
+				</ol>
+			</ul>
+			<ul id="groomsmen">
+				<ol>
+					<label>The Boys: </label>
+					<input 
+						type="text" 
+						name="groomsmen" 
+						placeholder="groomsmen"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='groomsmen'">
+					</input>
+				</ol>
+			</ul>
+			<button class="createGroomsmen"> Add Groomsmen</button>
+			<br><br><br>
+			
+			<ul id="bridesmaids">
+				<ol>
+					<label>The Girls: </label>
+					<input 
+						type="text" 
+						name="bridesmaids" 
+						placeholder="bridesmaids"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='bridesmaids'">
+					</input>
+				</ol>
+			</ul>
+			<button class="createBridesmaids"> Add Bridesmaids</button>
+	<hr>
+	<!-- REST OF THE FAMILY -->
+		<section>
+			<h1> The rest of the Family </h1>
+				<ol>
+					<label>Ring Bearer: </label>
+					<input 
+						type="text" 
+						name="ringbearer" 
+						placeholder="Ring Bearer"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='Ring Bearer'">
+					</input>
+				</ol>
+				<ol>
+					<label>Flower Girl: </label>
+					<input 
+						type="text" 
+						name="flowergirl" 
+						placeholder="Flower Girl"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='Flower Girl'">
+					</input>
+				</ol>
+
+				<ol>
+					<label>Father of the Bride: </label>
+					<input 
+						type="text" 
+						name="fatherofthebride" 
+						placeholder="father of the bride"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='father of the bride'">
+					</input>
+				</ol>
+				<ol>
+					<label>Mother of the Bride: </label>
+					<input 
+						type="text" 
+						name="motherofthebride" 
+						placeholder="mother of the bride"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='mother of the bride'">
+					</input>
+				</ol>
+				<ol>
+					<label>Father of the Groom: </label>
+					<input 
+						type="text" 
+						name="fatherofthegroom" 
+						placeholder="father of the groom"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='father of the groom'">
+					</input>
+				</ol>
+				<ol>
+					<label>Mother of the Groom: </label>
+					<input 
+						type="text" 
+						name="motherofthegroom" 
+						placeholder="mother of the groom"
+						onfocus="this.placeholder =''"
+						onblur="this.placeholder ='mother of the groom'">
+					</input>
+				</ol>
+		</section>
+
+
+		</section>
+			<hr>
+		<section>
+			<h1>Event Details </h1>
+			<ul>
+				<ol>
+					<label>Cake Cutting Song: </label>
+					<input
+						type="text"
+						name="cakeCutting"
+						placehoder="Cake Cutting Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Cake Cutting Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>Bouquet Toss Song: </label>
+					<input
+						type="text"
+						name="bouquetToss"
+						placehoder="Bouquet toss song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Bouquet Toss Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>Garter Removal Song: </label>
+					<input
+						type="text"
+						name="garterRemoval"
+						placehoder="Garter Removal Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Garter Removal Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>First Dance Song: </label>
+					<input
+						type="text"
+						name="firstDance"
+						placehoder="First Dance Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'First Dance Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>Last Dance Song: </label>
+					<input
+						type="text"
+						name="lastDance"
+						placehoder="Last Dance Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Last Dance Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>Father Daughter Dance Song: </label>
+					<input
+						type="text"
+						name="fatherDaughterDance"
+						placehoder="Father Daughter Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Father Daughter Song'">
+					</input>
+				</ol>
+				<ol>
+					<label>Mother Son Dance Song: </label>
+					<input
+						type="text"
+						name="motherSonDance"
+						placehoder="Mother Son Song"
+						onfocus="this.placeholder =''"
+						onblur = "this.placeholder = 'Mother Son Song'">
+					</input>
+				</ol>
+			</ul>
+		</section>
+		</div>
+			<hr>
+<!--REQUESTS SECTION -->
+		<div class="row">
+		<section>
+			<h1>Requests </h1>
+				<ul id="request">
+					<ol>
+						<input
+							type="text" 
+							name="Requests" 
+							placeholder="enter song name">
+						 </input>
+					</ol>
+				</ul>
+					<button class="requestItem" type="submit">Add a new Song</button>
+		</section>
+			<hr>
+<!-- DO NOT PLAY LIST SECTION-->
+		<section>
+			<h1> Do Not Play </h1>
+				<ul id="doNotPlay">
+					<ol>
+						<input 
+							type="text"
+							name="doNotPlay" 
+							placeholder="enter song name">
+						</input>
+					</ol>
+				</ul>
+				<button class="createDnp" type="submit">Add a new Song</button>
+		</section>
+		</div>
+	</main>
+</div>
+<script type="text/javascript" src="assets/js/logic.js"></script>
+
+</body>
+</html>
