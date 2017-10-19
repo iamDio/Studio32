@@ -110,3 +110,20 @@
 ol {
 	padding: 5px;
 }
+
+.contact-wrapper{
+	text-align: center;
+}
+#contact-form {
+		width: 50%;
+
+}
+#contact-form label {
+	display: inline-block;
+	text-align: right;
+}
+#contact-form input,textarea {
+	display: inline-block;
+	float: right;
+	clear: right;
+}
