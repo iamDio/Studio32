@@ -1,0 +1,25 @@
+{
+  "name": "cloud9",
+  "version": "1.0.0",
+  "description": "website for cloud9 entertainment company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamDio/Studio32.git"
+  },
+  "author": "dio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamDio/Studio32/issues"
+  },
+  "homepage": "https://github.com/iamDio/Studio32#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
+}
