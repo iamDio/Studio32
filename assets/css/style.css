@@ -5,6 +5,10 @@
 	text-decoration: none;
 }
 
+main{
+	width: 960px;
+	max-width: 100%
+}
 .slider{
 	overflow: hidden;
 	height: 350px;
@@ -105,25 +109,29 @@
 	width: 20%;
 	color: red;
 	padding top:100px;
-} */
+} 
 
 ol {
 	padding: 5px;
 }
 
 .contact-wrapper{
-	text-align: center;
+
 }
+
 #contact-form {
 		width: 50%;
+	text-align: center;
 
 }
 #contact-form label {
 	display: inline-block;
 	text-align: right;
+		float: left;
+		clear: left;
 }
 #contact-form input,textarea {
 	display: inline-block;
-	float: right;
-	clear: right;
+	float: left;
+	clear: left;
 }
