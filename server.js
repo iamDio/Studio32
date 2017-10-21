@@ -3,9 +3,13 @@ const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
+const contactForm = require('./models/contactForm.js');
 const routes = require('./routes/routes');
 
+mongoose.Promise = Promise;
+
 const app = express();
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -20,7 +24,7 @@ app.use(express.static(__dirname + "/views"));
 
 app.use('/', routes)
 
-let MONGODB_URI = "#";
+let MONGODB_URI = "mongodb://heroku_xqz9wxc0:qweasd123@ds129315.mlab.com:29315/heroku_xqz9wxc0";
 
 let uristring = 
 	process.env.MONGODB_URI||'mongodb://localhost/Studio32';
