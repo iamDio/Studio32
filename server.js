@@ -20,6 +20,28 @@ app.use(express.static(__dirname + "/views"));
 
 app.use('/', routes)
 
+let MONGODB_URI = "#";
+
+let uristring = 
+	process.env.MONGODB_URI||'mongodb://localhost/Studio32';
+
+mongoose.connect(uristring, function(err, res){
+	if(err){
+		console.log(`ERROR CONNECTION TO ${uristring} ${err}`);
+	}else {
+		console.log(`Succesfully connected to: ${uristring}`);
+	}
+});
+
+let db = mongoose.connection;
+
+db.on('error',function(error){
+	console.log(`Mongoose connection error ${error}`);
+});
+
+db.once('open',function(){
+	console.log(`Mongoose connection successful`);
+});
 
 app.listen(PORT, function(){
 	console.log(`app listening on PORT ${PORT}`);
