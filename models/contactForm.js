@@ -3,33 +3,34 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const ContactFormSchema = new Schema({
-	//full name string
-	fullname:{
+	name: {
 		type: String,
-		trim: true,
-		required: true
+		trim: true
 	},
-	date: {
-		type:Date,
-		required: true
+
+	eventDate: {
+		type:Date
 	},
+
 	venue: {
 		type: String,
-		trim: true,
-		required: true
+		trim: true
 	},
+
 	email: {
 		type: String,
-		trim: true,
+		trim: true
 	},
-	phone:{
-		type: Number,
-		required:true
+
+	phoneNumber:{
+		type: String
 	},
-	additional:{
+
+	message:{
 		type: String,
 		trim: true
 	}
+
 });
 
 let ContactFormModel = mongoose.model('contactForm', ContactFormSchema);

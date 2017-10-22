@@ -11,8 +11,14 @@ router.get('/', function(req, res){
 });
 
 router.post('/contact/submit',function(req, res){
-	contactForm.create(req.body, function(result){
-		res.render('GREAT SUCCESSSS');
+	let customer = new contactForm(req.body);
+
+	customer.save(function(error,doc){
+		if(error) {
+			res.send(error);
+		} else {
+			res.send(doc);
+		}
 	});
 });
 
