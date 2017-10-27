@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-
 const contactForm = require('./models/contactForm.js');
 const routes = require('./routes/routes');
 

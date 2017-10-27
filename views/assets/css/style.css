@@ -1,4 +1,4 @@
- @import url('https://fonts.google.com/featured/2016+Fonts+Refresh')
+ @import url('https://fonts.googleapis.com/css?family=Quicksand')
 
 *{
 	margin: 0;
@@ -7,9 +7,13 @@
 	text-decoration: none;
 }
 
+body{
+
+}
 main{
 	width: 960px;
-	max-width: 100%
+	max-width: 100%;
+	font-family:Quicksand;
 }
 .slider{
 	overflow: hidden;
