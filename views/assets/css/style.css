@@ -151,5 +151,12 @@ ol {
 	clear: left;
 	width: 400px;
 	background-color:#C1CDC4;
-	color:#E7DFDD ;
+	color:black ;
+	margin-bottom: 10px;
+}
+
+hr{
+    background-color: #C1CDC4;
+    border: 0 none;
+    height: 5px;
 }
